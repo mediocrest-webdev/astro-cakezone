@@ -29,6 +29,7 @@ To get a local copy of the project up and running, follow these steps:
    cd astro-cakezone
    npm install
 3. **Run the Development Server:**
+   ```bash
    npm run dev
 
 
