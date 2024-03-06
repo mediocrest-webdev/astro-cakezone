@@ -1,0 +1,20 @@
+---
+const {buttonName, buttonColor, buttonIcon, buttonId} = Astro.props
+
+---
+<button class={buttonColor}><i class={buttonIcon}></i>{buttonName}</button>
+
+
+<style>
+   .button-red{
+    padding: 8px clamp(1rem, 0.23rem + 2.8vw, 2.75rem);
+    border-radius: 20px;
+    background-color:#710C04;
+    color:white ;
+   }
+   .button-white{
+    padding: 8px clamp(1rem, 0.23rem + 2.8vw, 2.75rem);
+    border-radius: 20px;
+    background-color: #fafbfc;
+   }
+</style>

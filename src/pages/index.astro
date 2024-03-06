@@ -1,0 +1,61 @@
+---
+// component imports
+import Button from "../components/Button.astro";
+import Testimonial from "../components/Testimonial.astro";
+import Facts from "../components/Facts.astro";
+import Layout from "../layouts/Layout.astro";
+
+import About from "./About.astro";
+import Menu from "./Menu.astro";
+---
+
+<Layout title="Cake Zone | Home">
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="container-lg">
+        <div class="d-grid justify-content-center align-items-center text-center">
+          <h1 class="hero-title">Cake Zone</h1>
+          <p class="cs-topper mb-4">THE BEST CAKES IN MANILA</p>
+        
+          <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+            <Button
+              buttonName="Read More"
+              buttonColor="button-red"
+            />
+            <Button
+              buttonName="Play Video"
+              buttonIcon="fa-solid fa-play me-2"
+              buttonColor="button-white"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <About />
+
+    <!-- Facts -->
+    <Facts />
+
+    <!-- Menu -->
+    <Menu /> 
+
+    <!-- Testimonial -->
+    <Testimonial />
+  </main>
+</Layout>
+
+<style>
+  #hero {
+    background: url(../images/hero-bg.jpg) top right no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: clamp(250px, 10vw, 150px) 0;
+  }
+
+  .hero-title{
+	font-size: clamp(3rem, 2.12rem + 3.2vw, 5rem);
+  }
+</style>

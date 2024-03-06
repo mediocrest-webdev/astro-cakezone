@@ -1,0 +1,116 @@
+/* Variable Declarations */
+:root {
+    /* Colors */
+    --primary: #710C04;
+    --heading-color: #1a1a1a;
+    --text-color: #4e4b66;
+    --text-color-white: #fafbfc;
+
+    /* Typography */
+    --topper-font-size: clamp(0.8125rem, 1.6vw, 1rem); /* .08rem - 16px */
+    --heading-font-size: clamp(2rem, 0.12rem + 3.2vw, 3rem)!important; /* 1rem - 3rem */
+    --text-font-size: 1rem;
+
+    /* Spacing */
+    --section-padding: 8vw 1rem; /* 80px - 16px {top bottom - left right} */
+    --section-title-padding: 2rem;
+}
+
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box; /* prevents padding from affecting height and width */
+}
+
+/* (Spacing) */
+section{
+    padding: var(--section-padding);
+}
+
+.section-title{
+    margin-bottom: var(--section-title-padding);
+}
+
+/* Nav Styling */
+.navbar-brand{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    letter-spacing: .1rem;
+}
+
+/* Links and Lists Styling */
+a, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--heading-color);
+    text-decoration-line: underline;
+}
+
+/* Typography Styling */
+p, a {
+    font-family: 'Inter';
+    /* text-wrap: balance; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    letter-spacing: .1rem;
+}
+
+hgroup > p {
+    font-size: var(--text-font-size);
+    color: var(--text-color);
+}
+
+/* Component Styles */
+.bg-red{
+    background-color: var(--primary);
+}
+.bg-white{
+    background-color: var(--text-color-white);
+}
+
+.red{
+    color: var(--primary);
+}
+
+.cs-topper {
+    font-size: var(--topper-font-size);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--heading-font-size);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--heading-color);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--text-font-size);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--text-color);
+}

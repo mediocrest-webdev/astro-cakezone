@@ -1,0 +1,14 @@
+---
+const {title, quantity, icon} = Astro.props
+---
+<div class="col-lg-3">
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <p class="cs-topper">{title}</p>
+            <p>{quantity}</p>
+        </div>
+        <figure>
+            <i class={icon}></i>
+        </figure>
+    </div>
+</div>

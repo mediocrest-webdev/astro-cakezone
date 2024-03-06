@@ -1,0 +1,39 @@
+---
+const { title } = Astro.props
+---
+
+<footer class="border-top py-4">
+        <div class="container-lg">
+            <div class="row gap-2 gap-lg-0 ">
+                <div class="col-lg-3 mb-4">
+                    <a href="/"><h1>{title}</h1></a>
+                </div>
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <ul class="ps-0">
+                        <h6 class="mb-3">NAVIGATION</h6>
+                        
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/projects">MENU & PRICING</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="ps-0">
+                        <h6 class="mb-3">SOCIAL LINKS</h6>
+
+                        <li><a  href="/">FACEBOOK</a></li>
+                        <li><a href="/">INSTAGRAM</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <a  href="https://github.com/mediocrest-webdev" target="_blank">Design and Coded with ❤️ by <strong>Mediocrest</strong></a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+    }
+</style>
